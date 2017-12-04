@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+          <script src="./src/jquery.min.js"></script>
+          <script src="./src/bootstrap.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="./src/index.css" id="type">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+          <!--<link rel="stylesheet" type="text/css" href="bootstrap.min.css">-->
+          <script type="text/javascript" src="./src/project.js"></script>
+          <title> Yalin Shan</title>
+    </head>
+
+    <body>
+           <!-- navigation bar -->
+           <ul class="navigation">
+                  <li><a class="navigationTitle" href="#home"> Home</a></li>
+                  <li><a class="navigationTitle" href="#about"> About</a></li>
+                  <li><a class="navigationTitle" href="#project"> Project</a></li>
+                  <li><a class="navigationTitle" href="#contact"> Contact</a></li>
+           </ul>
+           <!-- First Impression Part -->
+           <div id="home" class="my-container">
+                 <div class="home-container">
+                        <div class="home-item-img">
+                             <img id="img-bg" src="./src/images/marble1.jpg"/>
+                             <img class="homeimg" src="./src/images/my1.jpg"/>
+                        </div>
+                        <div class="home-item-text">
+                             <p id="introduce"> I'm Yalin</p>
+                             <p class="introduce-sub">Student at Northeastern University<br>
+                                                      Passion in Software Development and Web Deisgn</p>
+                        </div>
+                 </div>
+           </div>
+
+           <!-- General Introduce Part -->
+
+           <div id="about" class="head-container">
+                 <div class="about-head">
+                      <p id="introducehead"> A bit about me...
+                      </p>
+                 </div>
+           </div>
+           <div class="general-about">
+               <div class="intros">
+                   <div class="intro">
+                       <a class="panjiva-introduce" href="https://panjiva.com/"> PANJIVA Inc.</a>
+                           <p class="introduce-sub">From intern to full-time employee<br>
+                               Witnessed and participated in a start-up environment</p>
+                   </div>
+                   <div class="intro">
+                       <script>
+                           $(document).ready(function(){
+                               $("#panjiva-img").mouseover(function(){
+                                   $("#panjiva-img").css("opacity","1");
+                               });
+                           });
+
+                           $(document).ready(function(){
+                               $("#panjiva-img").mouseout(function(){
+                                   $("#panjiva-img").css("opacity","0.5");
+                               });
+                           });
+                       </script>
+                       <img class = "layout" id="panjiva-img" src="./src/images/panjiva.jpg" alt="@Panjiva"/>
+                   </div>
+
+
+
+                   <!-- KK for laptop version -->
+                   <div class="KK-laptop">
+                       <div class="intro">
+                           <script>
+                               $(document).ready(function(){
+                                   $(".kk-img").mouseover(function(){
+                                       $(".kk-img").css("opacity","1");
+                                   });
+                               });
+                               $(document).ready(function(){
+                                   $(".kk-img").mouseout(function(){
+                                       $(".kk-img").css("opacity","0.5");
+                                   });
+                               });
+                           </script>
+                           <img class="kk-img" src="./src/images/kk.jpg" alt="@KarlieKloss"/>
+                       </div>
+                       <div class="intro">
+                           <a class="panjiva-introduce" href="http://kodewithklossy.com/"> "Kode with Klossy"</a>
+                           <p class="introduce-sub" style="text-align:center">Created by SuperModel Karlie Kloss<br>
+                               An idol of mine because I have modeled in the past<br>Encourage female to learn more about coding</p>
+                       </div>
+                   </div>
+
+
+
+                   <!-- KK for mobile version -->
+                   <div class="KK-mobile">
+                       <div class="intro">
+                           <a class="panjiva-introduce" href="http://kodewithklossy.com/"> "Kode with Klossy"</a>
+                           <p class="introduce-sub" style="text-align:center">Created by SuperModel Karlie Kloss<br>
+                               An idol of mine because I have modeled in the past<br>Encourage female to learn more about coding</p>
+                       </div>
+                       <div class="intro">
+                           <script>
+                               $(document).ready(function(){
+                                   $(".kk-img").mouseover(function(){
+                                       $(".kk-img").css("opacity","1");
+                                   });
+                               });
+                               $(document).ready(function(){
+                                   $(".kk-img").mouseout(function(){
+                                       $(".kk-img").css("opacity","0.5");
+                                   });
+                               });
+                           </script>
+                           <img class="kk-img" src="./src/images/kk.jpg" alt="@KarlieKloss"/>
+                       </div>
+                   </div>
+
+
+
+                   <div class="intro">
+                       <a class="panjiva-introduce" href="http://www.northeastern.edu/seattle/"> NORTHEASTERN UNIVERSITY</a>
+                       <p class="introduce-sub" style="text-align:center">Idea + Design + Coding = Development<br>
+                           Be positive, Be friendly, Be smart, Be hardworking</p>
+                   </div>
+                   <div class="intro">
+                       <script>
+                           $(document).ready(function(){
+                               $("#neu-img").mouseover(function(){
+                                   $("#neu-img").css("opacity","1");
+                               });
+                           });
+                           $(document).ready(function(){
+                               $("#neu-img").mouseout(function(){
+                                   $("#neu-img").css("opacity","0.5");
+                               });
+                           });
+                       </script>
+                       <img id="neu-img" src="./src/images/neu.jpg" alt="@Northeastern University"/>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Projects Part -->
+           <div id="project" class="project-head">
+               <p id="project-head">PROJECTS</p>
+           </div>
+
+           <div id="linepink"></div>
+
+           <div class="container" style="margin:0; padding:0; width:100%">
+               <div class="project-container">
+                   <p style='width:100%; height:10px; text-align:center; margin-top:10px;font-size:15px;color:dimgray;font-family:Futura, "Trebuchet MS", Arial, sans-serif;'>Click and Learn More</p>
+                   <div class="project-end">
+
+                       <div class="project-item" class="btn btn-info btn-lg" data-toggle="modal" data-target="#lookbook-pop">
+                           <img class="project-img" src="./src/images/lookbook.jpg"/>
+                           <p class='project-title'> LookBook<br>Fashion Shopping Website (Frontend)</p>
+                       </div>
+
+                       <div class="modal fade" id="lookbook-pop" role="dialog">
+                           <div class="modal-dialog">
+                               <div class="modal-content">
+                                   <div class="model-header">
+                                       <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                                       <div class="row">
+                                           <div class="pop-title">
+                                               <h4 class="model-body"> LookBook </h4>
+                                               <p> Check out the website : https://d2f0pnkocqm3pg.cloudfront.net/</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="modal-body">
+                                       <div id="myCarousel-lookbook" class="carousel slide" data-ride="carousel">
+                                           <ol class="carousel-indicators">
+                                               <li data-target="#myCarousel-lookbook" data-slide-to="0" class="active"></li>
+                                               <li data-target="#myCarousel-lookbook" data-slide-to="1" class="active"></li>
+                                           </ol>
+                                           <div class="carousel-inner" role="listbox">
+
+                                               <div class="item">
+                                                   <img style="width:100%;" src="./src/images/blogger1.jpg"/>
+                                                   <br>
+                                                   <div class="project-pop-text">
+                                                       <p>- Proposed the idea of the website and designed the website style as the team lead -
+                                                       </p>
+                                                   </div>
+                                               </div>
+                                               <div class="item active">
+                                                   <img style="width:100%;" src="./src/images/blogger2.jpg"/><br>
+                                                   <div class="project-pop-text">
+                                                       <p>- Designed and implemented the layout of the website based on Flexbox and Bootstrap framework -</p>
+                                                   </div>
+                                               </div>
+                                               <div class="item">
+                                                   <img style="width:100%;" src="./src/images/shop1.jpg"/><br>
+                                                   <div class="project-pop-text">
+                                                       <p>- Implemented the animation content in the website using JavaScript -</p>
+                                                   </div>
+                                               </div>
+                                               <div class="item">
+                                                   <img style="width:100%;" src="./src/images/shop2.jpg"/><br>
+                                                   <div class="project-pop-text">
+                                                       <p>- Prepared the slides and conducted a demo -</p>
+                                                   </div>
+                                               </div>
+                                               <div class="item">
+                                                   <img style="width:100%;" src="./src/images/search.jpg"/><br>
+                                                   <div class="project-pop-text">
+                                                       <p>- Website link: https://d2f0pnkocqm3pg.cloudfront.net/ -</p>
+                                                   </div>
+                                               </div>
+
+                                           </div>
+                                           <a class="left carousel-control" href="#myCarousel-lookbook" role="button"
+                                              data-slide="prev">
+                                               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                               <span class="sr-only">Previous</span>
+                                           </a>
+                                           <a class="right carousel-control" href="#myCarousel-lookbook" role="button"
+                                              data-slide="next">
+                                               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                               <span class="sr-only">Next</span>
+                                           </a>
+                                       </div>
+                                   </div>
+                                   <div class="model-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="project-item" class="btn btn-info btn-lg" data-toggle="modal" data-target="#database-pop">
+                           <img class="project-img" src="./src/images/microsoft.jpg"/>
+                           <p class='project-title'> Microsoft<br>Exchange Support (Database)</p>
+                       </div>
+
+                       <div class="modal fade" id="database-pop" role="dialog">
+                           <div class="modal-dialog">
+                               <div class="modal-content">
+                                   <div class="model-header">
+                                       <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                                       <div class="row">
+                                           <div class="pop-title">
+                                               <h4 class="model-body"> Microsoft Exchange Support</h4>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="modal-body">
+                                       <div id="myCarousel-database" class="carousel slide" data-ride="carousel">
+                                           <ol class="carousel-indicators">
+                                               <li data-target="#myCarousel-database" data-slide-to="0" class="active"></li>
+                                           </ol>
+                                           <div class="carousel-inner" role="listbox">
+                                               <div class="item active">
+                                                   <img style="width:100%;" src="./src/images/exchange1.jpg"/>
+                                                   <br>
+                                                   <div class="project-pop-text">
+                                                       <p>-Designed a relational database to manage troubleshooting tickets-
+                                                           <br>-Designed ERD, built schema and populated data via SQL-</p>
+                                                   </div>
+                                               </div>
+                                               <div class="item">
+                                                   <img style="width:100%;" src="./src/images/exchange2.jpg"/><br>
+                                                   <div class="project-pop-text">
+                                                       <p>-Created helper functions to optimized tickets assign process, including
+                                                           assign tickets to the best fit employee
+                                                           And balance the workload among employees-
+                                                           <br>-Generated reports about tickets type and peak hours for further
+                                                           analysis-</p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <a class="left carousel-control" href="#myCarousel-database" role="button"
+                                              data-slide="prev">
+                                               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                               <span class="sr-only">Previous</span>
+                                           </a>
+                                           <a class="right carousel-control" href="#myCarousel-database" role="button"
+                                              data-slide="next">
+                                               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                               <span class="sr-only">Next</span>
+                                           </a>
+                                       </div>
+                                   </div>
+                                   <div class="model-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+
+                       <div class="project-item" class="btn btn-info btn-lg" data-toggle="modal" data-target="#vehicle-pop">
+                           <img class="project-img" src="./src/images/vehicle.jpg"/>
+                           <p class='project-title'> Vehicle Inventory<br>Management System (Java)</p>
+                       </div>
+
+                       <div class="modal fade" id="vehicle-pop" role="dialog">
+                           <div class="modal-dialog">
+                               <div class="modal-content">
+                                   <div class="modal-leader">
+                                       <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                                       <div class="row">
+                                           <div class="pop-title">
+                                               <h4 class="model-body"> Vehicle Inventory Management System</h4>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="modal-body">
+                                       <div id="myCarousel-vehicle" class="carousel slide" data-ride="carousel">
+                                           <ol class="carousel-indicators">
+                                               <li data-target="#myCarousel-vehicle" data-slide-to="0" class="active"></li>
+                                           </ol>
+                                           <div class="carousel-inner" role="listbox">
+                                               <div class="item active">
+                                                   <img style="width:100%;" src="./src/images/vehicle1.jpg"/>
+                                                   <br>
+                                                   <div class="project-pop-text">
+                                                       <p>-Designed the system with Object Oriented Development Methodologies in mind-
+                                                           <br>-Implemented the GUI interface with Java Swing to virtualize the
+                                                           inventory-</p>
+                                                   </div>
+                                               </div>
+                                               <div class="item">
+                                                   <img style="width:100%;" src="./src/images/vehicle2.jpg"/><br>
+                                                   <div class="project-pop-text">
+                                                       <p>-Developed the system with features of filtering, sorting and
+                                                           modification-</p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <a class="left carousel-control" href="#myCarousel-vehicle" role="button" data-slide="prev">
+                                               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                               <span class="sr-only">Previous</span>
+                                           </a>
+                                           <a class="right carousel-control" href="#myCarousel-vehicle" role="button"
+                                              data-slide="next">
+                                               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                               <span class="sr-only">Next</span>
+                                           </a>
+                                       </div>
+                                   </div>
+                                   <div class="model-footer">
+                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="project-item" style="background-color: #FFE4E1">
+                           <p class="project-title" style="color: white; font-size: 40px;"> Coming Soon</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+
+           <!-- Contact Part -->
+           <div id="line"></div>
+           <div class="contact-container" id="contact">
+               <p id="contact-title">SAY HEY!</p>
+               <div class="contact-sub-container">
+
+                   <div class="contact-cube">
+                       <p class="contact-cube-contact">CONTACT</p>
+                       <div class="contact-left-container">
+                           <img class="mobile-logo" src="./src/images/email.jpg"/>
+                           <p class="input-title">E-Mail:</p>
+                       </div>
+                       <a class="input-title-email" href="mailto:lynneshan1220@gmail.com">lynneshan1220@gmail.com</a>
+                       <div class="contact-left-container">
+                           <img class="mobile-logo" src="./src/images/mobile.jpg"/>
+                           <p class="input-title">Mobile:</p>
+                       </div>
+                       <p class="input-title-email">408-666-6102</p>
+                       <div class="logo-container">
+                           <a href="https://www.linkedin.com/in/yalin-shan-49bb64132/">
+                               <img class="logo-img" src="./src/images/linkedin.jpg">
+                           </a>
+                           <a href="https://www.facebook.com/yalin.shan.9">
+                               <img class="logo-img" src="./src/images/fb.jpg">
+                           </a>
+                           <a href="https://www.instagram.com/linislynne/">
+                               <img class="logo-img" src="./src/images/ins.jpg">
+                           </a>
+                       </div>
+                   </div>
+
+
+                   <div id="map" class="contact-cube" style="width:300px; height:350px;">
+                       <script async defer
+                               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0Bq2l9tYVpedcS1Rb5oBhPG7wsxkvIOs&callback=myMap"
+                               type="text/javascript">
+                       </script>
+                       <script>
+                           function myMap() {
+                               var mapCanvas = document.getElementById("map");
+                               var myCenter = new google.maps.LatLng(47.508742, -122.33);
+                               var mapOptions = {center: myCenter, zoom: 5};
+                               var map = new google.maps.Map(mapCanvas, mapOptions);
+                               var marker = new google.maps.Marker({
+                                   position: myCenter,
+                                   animation: google.maps.Animation.BOUNCE
+                               });
+                               marker.setMap(map);
+                           }
+                       </script>
+                   </div>
+               </div>
+           </div>
+
+           <div class="footer">
+               <a href="#home"> Back to Top </a>
+               <p> Created with Passion: Yalin © CopyRight 2017 </p>
+           </div>
+
+    </body>
+</html>
